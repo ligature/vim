@@ -15,7 +15,8 @@ set shiftwidth=4
 set softtabstop=4
 set tabstop=4
 set laststatus=2
-set statusline=%<%f%h%m%r\ %b\ %{&encoding}\ 0x\ \ %l,%c%V\ %P 
+set statusline=%<%f%h%m%r\ %b\ %{&encoding}\ 0x\ \ %l,%c%V\ %P,
+set statusline+=%{GitBranchInfoString()}
 set smartindent
 set complete=""
 set complete+=.
@@ -55,3 +56,5 @@ Bundle 'The-NERD-tree'
 Bundle 'perl-support.vim'
 Bundle 'taglist.vim'
 Bundle 'taglist-plus'
+Bundle 'Git-Branch-Info'
+Bundle 'hypergit.vim'
