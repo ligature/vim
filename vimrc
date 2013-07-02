@@ -33,6 +33,23 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 filetype plugin indent on 
+
+" backups
+set backup
+function! BackupDir()
+    let l:backupdir=$HOME.'/.vim/backup/'.substitute(expand('%:p:h'), '^'.$HOME, '~', '')
+
+    if !isdirectory(l:backupdir)
+        call mkdir(l:backupdir, 'p', 0700)
+    endif
+
+    let &backupdir=l:backupdir
+
+    let &backupext=strftime('-%Y-%m-%d-%H-%M')
+endfunction
+
+autocmd! bufwritepre * call BackupDir()
+
 " encodings
 set termencoding=utf-8
 set fileencodings=utf8,cp1251,cp866
