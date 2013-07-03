@@ -1,14 +1,17 @@
+" Gui/Console view
+colorscheme desert
+set antialias
+set guifont=Monaco:h14
+set guioptions-=T
+
 " Options
 set nocompatible
 set ruler  
-"set foldmethod=indent
-set incsearch
 set novisualbell
 set t_vb=
 set mouse=a
 set mousemodel=popup
 set hidden
-set guioptions-=T
 set autoindent
 set expandtab
 set shiftwidth=4
@@ -23,10 +26,26 @@ set complete+=.
 set complete+=k
 set complete+=b
 set complete+=t
+set history=256
+set undolevels=1024
+" highlights all occurrances of the word in buffer under cursor 
+"autocmd CursorMoved * silent! exe printf("match Search /\\<%s\\>/",expand('<cword>'))
 
+" Folding
+set foldenable
+set foldmethod=indent
+set foldcolumn=3
+set foldlevel=2
+set foldopen=all
+
+" Search
+set ignorecase
+set incsearch
+set hlsearch
+
+" vundle requiriments
 filetype off
 syntax on
-colorscheme slate
 set number
 set rtp+=~/.vim/bundle/vundle/
 
@@ -78,3 +97,4 @@ Bundle 'Git-Branch-Info'
 Bundle 'hypergit.vim'
 Bundle 'ruby.vim'
 Bundle 'bufexplorer.zip'
+Bundle 'The-NERD-Commenter'
