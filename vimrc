@@ -1,7 +1,7 @@
 " Options
 set nocompatible
 set ruler  
-set foldmethod=indent
+"set foldmethod=indent
 set incsearch
 set novisualbell
 set t_vb=
@@ -64,7 +64,8 @@ menu Encoding.utf-8 :e ++enc=utf8 <CR>
 map <F8> :emenu Encoding.<TAB>
 
 " keybindings
-map <silent> <F5> :NERDTreeToggle<CR>
+nmap <silent> <F5> :NERDTreeToggle<CR>
+nmap <silent> <F2> :BufExplorer<CR>
 
 " Bundles
 Bundle 'gmarik/vundle'
@@ -75,3 +76,5 @@ Bundle 'taglist.vim'
 Bundle 'taglist-plus'
 Bundle 'Git-Branch-Info'
 Bundle 'hypergit.vim'
+Bundle 'ruby.vim'
+Bundle 'bufexplorer.zip'
