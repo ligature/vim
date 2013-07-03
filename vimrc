@@ -80,7 +80,6 @@ menu Encoding.koi8-r :e ++enc=koi8-r<CR>
 menu Encoding.windows-1251 :e ++enc=cp1251<CR>
 menu Encoding.cp866 :e ++enc=cp866<CR>
 menu Encoding.utf-8 :e ++enc=utf8 <CR>
-map <F8> :emenu Encoding.<TAB>
 
 " keybindings
 nmap <silent> <F5> :NERDTreeToggle<CR>
@@ -89,6 +88,8 @@ noremap <Up> <NOP>
 noremap <Down> <NOP>
 noremap <Left> <NOP>
 noremap <Right> <NOP>
+let mapleader = ","
+map <F8> :emenu Encoding.<TAB>
 
 " Bundles
 Bundle 'gmarik/vundle'
