@@ -85,6 +85,10 @@ map <F8> :emenu Encoding.<TAB>
 " keybindings
 nmap <silent> <F5> :NERDTreeToggle<CR>
 nmap <silent> <F2> :BufExplorer<CR>
+noremap <Up> <NOP>
+noremap <Down> <NOP>
+noremap <Left> <NOP>
+noremap <Right> <NOP>
 
 " Bundles
 Bundle 'gmarik/vundle'
@@ -98,3 +102,5 @@ Bundle 'hypergit.vim'
 Bundle 'ruby.vim'
 Bundle 'bufexplorer.zip'
 Bundle 'The-NERD-Commenter'
+Bundle 'ack.vim'
+Bundle 'UltiSnips'
