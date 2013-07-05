@@ -28,6 +28,7 @@ set complete+=b
 set complete+=t
 set history=256
 set undolevels=1024
+set modelines=2
 " highlights all occurrances of the word in buffer under cursor 
 "autocmd CursorMoved * silent! exe printf("match Search /\\<%s\\>/",expand('<cword>'))
 
@@ -90,6 +91,7 @@ noremap <Left> <NOP>
 noremap <Right> <NOP>
 let mapleader = ","
 map <F8> :emenu Encoding.<TAB>
+nnoremap <F3> :set hlsearch!<CR>
 
 " Bundles
 Bundle 'gmarik/vundle'
@@ -110,6 +112,7 @@ Bundle "MarcWeber/vim-addon-mw-utils"
 Bundle "tomtom/tlib_vim"
 Bundle "garbas/vim-snipmate"
 Bundle "vadv/vim-chef"
+Bundle 'snipmate-snippets'
 
 " Bundles options
 " chef
