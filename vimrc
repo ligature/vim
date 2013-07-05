@@ -104,5 +104,13 @@ Bundle 'ruby.vim'
 Bundle 'bufexplorer.zip'
 Bundle 'The-NERD-Commenter'
 Bundle 'ack.vim'
-Bundle 'UltiSnips'
+"Bundle 'UltiSnips'
 Bundle 'netrw.vim'
+Bundle "MarcWeber/vim-addon-mw-utils"
+Bundle "tomtom/tlib_vim"
+Bundle "garbas/vim-snipmate"
+Bundle "vadv/vim-chef"
+
+" Bundles options
+" chef
+autocmd FileType ruby,eruby set filetype=ruby.eruby.chef
