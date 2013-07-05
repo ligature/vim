@@ -32,14 +32,14 @@ set undolevels=1024
 "autocmd CursorMoved * silent! exe printf("match Search /\\<%s\\>/",expand('<cword>'))
 
 " Folding
-set foldenable
+set nofoldenable
 set foldmethod=indent
 set foldcolumn=3
-set foldlevel=2
+set foldlevel=1
 set foldopen=all
 
 " Search
-set ignorecase
+set smartcase
 set incsearch
 set hlsearch
 
@@ -105,3 +105,4 @@ Bundle 'bufexplorer.zip'
 Bundle 'The-NERD-Commenter'
 Bundle 'ack.vim'
 Bundle 'UltiSnips'
+Bundle 'netrw.vim'
