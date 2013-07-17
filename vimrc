@@ -117,5 +117,5 @@ Bundle 'snipmate-snippets'
 " Bundles options
 " chef
 autocmd FileType ruby,eruby set filetype=ruby.eruby.chef
-autocmd FileType ruby,eruby set tabstop = 2
-autocmd FileType ruby,eruby set shiftwidth = 2
+autocmd FileType ruby,eruby set tabstop=2
+autocmd FileType ruby,eruby set shiftwidth=2
