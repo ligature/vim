@@ -113,6 +113,7 @@ Bundle "tomtom/tlib_vim"
 Bundle "garbas/vim-snipmate"
 Bundle "vadv/vim-chef"
 Bundle 'snipmate-snippets'
+Bundle 'bling/vim-airline'
 
 " Bundles options
 " chef
@@ -120,3 +121,6 @@ autocmd FileType ruby,eruby set filetype=ruby.eruby.chef
 autocmd FileType ruby,eruby set tabstop=2
 autocmd FileType ruby,eruby set shiftwidth=2
 autocmd FileType ruby,eruby set softtabstop=2
+
+" airline
+let g:airline_powerline_fonts = 1
