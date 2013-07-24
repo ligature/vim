@@ -92,6 +92,8 @@ noremap <Right> <NOP>
 let mapleader = ","
 map <F8> :emenu Encoding.<TAB>
 nnoremap <F3> :set hlsearch!<CR>
+nmap <leader>l :set list!<CR>
+
 
 " Bundles
 Bundle 'gmarik/vundle'
@@ -100,8 +102,8 @@ Bundle 'The-NERD-tree'
 Bundle 'perl-support.vim'
 "Bundle 'taglist.vim'
 "Bundle 'taglist-plus'
-Bundle 'Git-Branch-Info'
-Bundle 'hypergit.vim'
+"Bundle 'Git-Branch-Info'
+"Bundle 'hypergit.vim'
 Bundle 'ruby.vim'
 Bundle 'bufexplorer.zip'
 Bundle 'The-NERD-Commenter'
@@ -113,7 +115,10 @@ Bundle "tomtom/tlib_vim"
 Bundle "garbas/vim-snipmate"
 Bundle "vadv/vim-chef"
 Bundle 'snipmate-snippets'
+Bundle 'tpope/vim-fugitive'
+Bundle 'bling/vim-bufferline'
 Bundle 'bling/vim-airline'
+
 
 " Bundles options
 " chef
@@ -123,4 +128,5 @@ autocmd FileType ruby,eruby set shiftwidth=2
 autocmd FileType ruby,eruby set softtabstop=2
 
 " airline
-let g:airline_powerline_fonts = 1
+let g:airline_powerline_fonts=1
+let g:airline_enable_fugitive=1
