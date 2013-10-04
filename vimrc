@@ -118,6 +118,7 @@ Bundle 'snipmate-snippets'
 Bundle 'tpope/vim-fugitive'
 Bundle 'bling/vim-bufferline'
 Bundle 'bling/vim-airline'
+Bundle 'ack.vim'
 
 
 " Bundles options
